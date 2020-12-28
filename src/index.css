@@ -1,0 +1,159 @@
+body{
+    background-color: #121212;
+    color: white;
+}
+nav {
+    text-align: center;
+    background-color:black;
+    padding: 25px;
+}   
+
+.nav-button {
+    font-weight: bold;
+    font-size: 2rem;
+    display: inline;
+}
+
+.nav-searchbar {
+    display: inline;
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
+.thumbnail-image {
+    height: 275px;
+}
+
+.genre-header {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.details-card {
+    color: white;
+    display: inline-table;
+    background-color: #1e1e1e;
+    position: absolute;
+    min-width: 25%;
+    max-width: 25%;
+    height: 275px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    transition: position 5.5s ease;
+}
+
+
+.details-card-large {
+    position: fixed;
+    top: 5vh;
+    right: 30vw;
+    width: 40vw;
+    background-color: #1e1e1e;
+}
+
+.blur {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color:rgba(30,30,30,0.7);
+}
+
+.title {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.overview {
+    text-align: left;
+    font-size: .9rem;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.video-row{
+    width: 70vw;
+}
+
+
+
+
+@media (max-width: 576px) {
+    .thumbnail-image {
+        height: 325px;
+    }
+    .details-card-large {
+        top: 5vh;
+        right: 5vw;
+        width: 90vw;
+    }
+}
+
+@media (min-width: 576px) {
+    .thumbnail-image {
+        height: 325px;
+    }
+    .details-card {
+        height: 325px;
+        min-width: 50%;
+        max-width: 50%;
+    }
+    .details-card-large {
+        top: 5vh;
+        right: 5vw;
+        width: 90vw;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .details-card {
+        height: 255px;
+        min-width: 40%;
+        max-width: 40%;
+    }
+    .thumbnail-image {
+        height: 255px;
+    }
+    .details-card-large {
+        top: 5vh;
+        right: 15vw;
+        width: 60vw;
+    }
+}
+
+@media (min-width: 1400px) {
+    .thumbnail-image {
+        height: 275px;
+    }
+    .details-card {
+        height: 275px;
+    }
+    .details-card-large {
+        top: 5vh;
+        right: 30vw;
+        width: 40vw;
+    }
+}
+@media (min-width: 1500px) {
+    details-card {
+        height: 275px;
+        min-width: 30%;
+        max-width: 30%;
+    }
+}
+
+
+@media (min-width: 1800px) {
+    .details-card {
+        height: 275px;
+        min-width: 25%;
+        max-width: 25%;
+    }
+}
